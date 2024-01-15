@@ -1,0 +1,26 @@
+#Gather genome quality stats
+
+#Number of bases
+tr -cd 'A,a,C,c,G,g,T,t,N,n' < Ceos_june2021.fasta | wc -c = 1270670453, 1270.67 mB OR 1270663421
+
+#Contigs 
+grep -c "^>" Ceos_june2021.fasta = 2344
+
+#LongestContig
+cat w.fasta | bioawk -c fastx '{ print length($seq), $name }' | sort -k1,1rn | head -1 = 64894510
+
+#scaffold lengths
+bioawk -c fastx '{ print $name, length($seq) }' < sequences.fa
+
+#Number of scaffolds
+awk '/^>/ {if (seqlen){print seqlen}; printf $0"\t";seqlen=0;next; } { seqlen += length($0)} END{print seqlen}' Ceos_june2021.fasta >> scaffs.txt
+
+##Read scaffs.txt into R for scafflengths plot
+
+#In R
+
+scaff<-read.table("scaffs.txt", sep="\t") 
+
+colnames(scaff) <- c("name", "length") 
+
+plot(sort(scaff$length))

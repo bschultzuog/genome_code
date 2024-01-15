@@ -1,0 +1,45 @@
+debuggroup summary 0.20s welcome to circos v0.69-8 15 Jun 2019 on Perl 5.030002
+debuggroup summary 0.20s current working directory /project/6049195/Circos/Trials
+debuggroup summary 0.20s command /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/circos/0.69-9/bin/circos -conf circos_dace_test.conf -noparanoid -debug_group summary,timer
+debuggroup summary 0.20s loading configuration from file circos_dace_test.conf
+debuggroup summary 0.20s found conf file circos_dace_test.conf
+debuggroup summary 0.32s debug will appear for these features: summary,timer
+debuggroup summary 0.32s bitmap output image ./circos.png
+debuggroup summary 0.32s SVG output image ./circos.svg
+debuggroup summary 0.35s parsing karyotype and organizing ideograms
+debuggroup summary 0.36s karyotype has 50 chromosomes of total size 2,446,955,190
+debuggroup summary 0.37s applying global and local scaling
+debuggroup summary 0.38s allocating image, colors and brushes
+can't create /tmp/circos.colorlist.cedar1.cedar.computecanada.ca.dat: Permission denied at /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/circos/0.69-9/bin/../lib/Circos/Colors.pm line 265.
+
+debuggroup summary 7.11s drawing 50 ideograms of total size 2,446,955,190
+debuggroup summary 7.11s drawing highlights and ideograms
+debuggroup summary 7.24s found conf file /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/circos/0.69-9/bin/../etc/tracks/link.conf
+debuggroup summary 7.24s process track_0 link /project/6049195/Circos/Trials/dacexzebra_trimmed_circos.txt
+debuggroup summary 9.33s drawing link track_0 z 0
+debuggroup timer 28.50s report circos 28.304 s
+debuggroup timer 28.50s report color 6.612 s
+debuggroup timer 28.50s report colorcache 0.001 s
+debuggroup timer 28.50s report colordefinitions 0.614 s
+debuggroup timer 28.50s report colorfetch 0.070 s
+debuggroup timer 28.50s report colorlists 5.082 s
+debuggroup timer 28.50s report colorlookups 0.004 s
+debuggroup timer 28.50s report colortransparency 0.786 s
+debuggroup timer 28.50s report dataparams 0.439 s
+debuggroup timer 28.50s report datarules 0.000 s
+debuggroup timer 28.50s report graphic_png_polygon 0.023 s
+debuggroup timer 28.50s report graphic_slice 0.052 s
+debuggroup timer 28.50s report graphic_slice_polygon_coord 0.012 s
+debuggroup timer 28.50s report graphic_slice_polygon_svg 0.011 s
+debuggroup timer 28.50s report graphic_slice_preprocess 0.005 s
+debuggroup timer 28.50s report highlights 0.001 s
+debuggroup timer 28.50s report ideograms_draw 0.130 s
+debuggroup timer 28.50s report ideograms_processing 0.012 s
+debuggroup timer 28.50s report ideograms_zoom 0.010 s
+debuggroup timer 28.50s report io 1.372 s
+debuggroup timer 28.50s report karyotype 0.007 s
+debuggroup timer 28.50s report parameter_seek 1.670 s
+debuggroup timer 28.50s report unitconvert 0.001 s
+debuggroup timer 28.50s report unitconvert_decision 0.000 s
+debuggroup timer 28.50s report unitconvert_delegate 0.000 s
+debuggroup timer 28.50s report unitparse 0.012 s
